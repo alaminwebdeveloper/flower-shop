@@ -23,16 +23,27 @@ body{
 .btn{
     border-radius: 8px;
     background: #E55473;
-    color: #fff;
     padding: 20px 40px;
     border: none;
-    outline: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+.btn:hover{
+    background: #fa5277;
+}
+.btn > a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Start Header Section Style Here */
 
 #header{
     background: rgba(229, 84, 115, 0.10);
+    border-bottom: 1px solid #fab9c6;
 }
 
 .container{
@@ -47,12 +58,13 @@ body{
     padding: 14px 0;
 }
 
-.logo h2{
+.logo > a{
     font-size: 48px;
     font-weight: 900;
     color: #111010;
+    text-decoration: none;
 }
-.logo h2 > span{
+.logo a > span{
     color: #E55473;
 }
 .navbar{
@@ -72,11 +84,48 @@ body{
 }
 .navbar ul li:hover a{
     color: #111010;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #E55473;
+    border-radius: 50%;
 }
 
 
+/* Start Banner Section Style Here */
 
+#banner{
+    background: rgba(229, 84, 115, 0.10);
+    padding-top: 10px;
+}
 
+.banner-area{
+    display: flex;
+    align-items: center;
+}
+.banner-content{
+    width: 55%;
+}
+.banner-content > h1{
+    color: #272727;
+    font-size: 70px;
+    font-weight: 800;
+}
+.banner-content > p{
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 15px 0 25px 0;
+}
+
+.banner-img{
+    width: 45%;
+    padding: 10px 0 0 10px;
+}
+
+.banner-img img{
+    width: 100%;
+    vertical-align: middle;
+}
 
 
 
